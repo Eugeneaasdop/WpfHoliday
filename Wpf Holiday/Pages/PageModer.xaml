@@ -1,0 +1,60 @@
+﻿<Page x:Class="Wpf_Holiday.Pages.PageModer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wpf_Holiday.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageModer">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Background="#E34234">
+            <TextBlock Text="Модераторы" HorizontalAlignment="Center" Background="#E34234"  Style="{StaticResource StyleTxtSubtitle}" Foreground="White"/>
+        </StackPanel>
+        <DataGrid Name="dtgModerator" Style="{StaticResource StyleDataGrid}" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Width="auto" Header="Фото">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Width="90" Stretch="UniformToFill" HorizontalAlignment="Left" Margin="5">
+                                <Image.Source>
+                                    <Binding Path="Photo">
+                                        <Binding.TargetNullValue>
+                                            <ImageSource>
+                                                \Resources\foto14.jpg
+                                            </ImageSource>
+                                        </Binding.TargetNullValue>
+                                    </Binding>
+                                </Image.Source>
+                            </Image>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="ФИО" Width="0.5*" Binding="{Binding FIO}"/>
+                <DataGridTextColumn Header="Почта" Width="0.5*" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Пароль" Width="0.5*" Binding="{Binding Password}"/>
+                <DataGridTextColumn Header="Страна" Width="0.5*" Binding="{Binding Country.NameCountry}"/>
+                <DataGridTextColumn Header="День рождения" Width="0.5*" Binding="{Binding DateBirthday, StringFormat={}{0:dd/MM/yyyy}}"/>
+                <DataGridTextColumn Header="Телефон" Width="0.5*" Binding="{Binding Phone}"/>
+                <DataGridTextColumn Header="Направление" Width="0.5*" Binding="{Binding Dirictory.IdDirictory}"/>
+                <DataGridTextColumn Header="Пол" Width="0.5*" Binding="{Binding Pol}"/>
+                <DataGridTextColumn Header="Событие модератора" Width="0.5*" Binding="{Binding Eventmoder.NameMod}"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Добавить" Name="MenuAdd" Click="MenuAdd_Click"/>
+                    <MenuItem Header="Редактировать" Name="MenuEdit" Click="MenuEdit_Click"/>
+                    <MenuItem Header="Обновить" Name="MenuUpdate" Click="MenuUpdate_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Удалить" Name="MenuDel" Click="MenuDel_Click"/>
+                    <MenuItem Header="Глдавное меню" Name="MenuGlav" Click="MenuGlav_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</Page>

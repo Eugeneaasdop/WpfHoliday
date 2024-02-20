@@ -1,0 +1,20 @@
+﻿<Page x:Class="Wpf_Holiday.Pages.PageMainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wpf_Holiday.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="900"
+      Title="PageMainMenu">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15">
+            <Button Name="btnToPerson" Content="Участники" Style="{StaticResource MenuStyleBtn}" Click="btnToPerson_Click"/>
+            <Button Name="btnToJuri" Content="Жюри" Style="{StaticResource MenuStyleBtn}" Click="btnToJuri_Click"/>
+            <Button Name="btnToOrginiz" Content="Организаторы" Style="{StaticResource MenuStyleBtn}" Click="btnToOrginiz_Click"/>
+            <Button Name="btnToModer" Content="Модераторы" Style="{StaticResource MenuStyleBtn}" Click="btnToModer_Click"/>
+            <Button Name="btnToActiv" Content="Активность" Style="{StaticResource MenuStyleBtn}" Click="btnToActiv_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

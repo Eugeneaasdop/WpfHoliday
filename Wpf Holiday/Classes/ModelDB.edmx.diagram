@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4989c0bf93ed4b01be80f31a85e599de" Name="Diagram1">
+        <EntityTypeShape EntityType="HolidayModel.Activity" Width="1.5" PointX="8.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Country" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Dirictory" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Event" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Eventmoder" Width="1.5" PointX="3.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Juri" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Moderator" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Organizer" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Person" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolidayModel.Towns" Width="1.5" PointX="3" PointY="22.25" IsExpanded="true" />
+        <AssociationConnector Association="HolidayModel.FK_Activity_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Activity_Juri" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Activity_Moderator" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Activity_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Juri_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Moderator_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Organizer_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Person_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Juri_Dirictory" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Moderator_Dirictory" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Event_Organizer1" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Event_Towns" ManuallyRouted="false" />
+        <AssociationConnector Association="HolidayModel.FK_Moderator_Eventmoder" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

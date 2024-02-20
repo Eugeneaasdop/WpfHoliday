@@ -1,0 +1,83 @@
+﻿<Application x:Class="Wpf_Holiday.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Wpf_Holiday"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="StyleTxtTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="Snow"/>
+        </Style>
+        <Style x:Key="StyleTxtSearch" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+        </Style>
+        <Style x:Key="MenuStyleBtn" TargetType="Button">
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="0, 20"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#7B68EE"/>
+            <Setter Property="Foreground" Value="Snow"/>
+        </Style>
+        <Style x:Key="MenuStyleBtn2" TargetType="Button">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="Height" Value="65"/>
+            <Setter Property="Margin" Value="0, 25"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="Snow"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+        </Style>
+        <Style x:Key="StyleDataGrid" TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="Margin" Value="10, 15"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+        <Style x:Key="StyleTxtSubtitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+        </Style>
+        <Style x:Key="StyleTxt" TargetType="TextBlock">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="Margin" Value="7"/>
+        </Style>
+        <Style x:Key="StyleTxb" TargetType="TextBox">
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="Margin" Value="7"/>
+        </Style>
+        <Style x:Key="StyleCmb" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="Margin" Value="7"/>
+        </Style>
+        <Style x:Key="StyleDatePicker" TargetType="DatePicker">
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="Margin" Value="7"/>
+        </Style>
+        <Style TargetType="MenuItem">
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+    </Application.Resources>
+</Application>
